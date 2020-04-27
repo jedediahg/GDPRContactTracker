@@ -1,0 +1,25 @@
+title GDPR Compliant Contact Tracker App
+
+participant Alice
+participant Bob
+participant MedicalTeam
+participant Authority
+
+Alice->Authority:Installs app\nregisters GUID
+Authority->Authority: Generate Pub/Prv\nkeypair for GUID
+Authority->Alice:Send AlicePubKey
+Alice<-Bob:Bluetooth contact\nSend BobPubKey
+Alice->Bob:Send AlicePubKey
+Alice->Bob:Send contact data\nBobPubKey Encrypted
+Bob->Alice:Send contact data\nAlicePubKeyEncrypted
+Alice->Alice:Get sick
+Alice->Authority:Sickness Notification
+Alice->MedicalTeam:Send ContactDataSet
+MedicalTeam->Authority:Request AlicePrvKey
+Authority->MedicalTeam:Send AlicePrvKey
+MedicalTeam->MedicalTeam:Decrypt ContactDataSet
+MedicalTeam->Bob:Contact notification
+
+
+
+
