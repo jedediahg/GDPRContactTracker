@@ -12,6 +12,8 @@ The only people that get to see the personal details in the contact history are 
 
 The contact notification does not need to tell the recipient with whom they came into contact that was infected. Users of the application remain anonymous to each other.
 
+The contact tracking information can even be limited to the device GUID so that notification can be done via push message to the concerned app users. With this method, it is possible to have the app never expose your personal information to anyone.
+
 In the sequence diagram below, Bob is already a registered user of the app.
 
 The file sequencediagram.org.txt can be used to edit the sequence diagram on https://sequencediagram.org/
