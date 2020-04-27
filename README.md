@@ -15,6 +15,8 @@ The contact notification does not need to tell the recipient with whom they came
 
 The contact tracking information can even be limited to the device GUID so that notification can be done via push message to the concerned app users. With this method, it is possible to have the app never expose personal information to anyone, not even the Medical Team.
 
+If one would like to ensure that the private key can't be released to the Medical Team without the explicit consent of the User, then the setup requires a couple more steps: Authority encrypts private key with its own symmetric encryption.  Authority sends private key to the User. User encrypts (wraps) the encrypted private key with its own symmetric encryption. User sends the locked key to Authority. Only when the user gives the Sickness Notification to the Authority do they provide the symmetric key to unlock the private key.
+
 In the sequence diagram below, Bob is already a registered user of the app.
 
 The file sequencediagram.org.txt can be used to edit the sequence diagram on https://sequencediagram.org/
