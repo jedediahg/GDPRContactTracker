@@ -1,6 +1,7 @@
 # GDPR Contact Tracker
 This is a simple design for a Contact Tracing app that can be implemented very simply and that fully respects privacy.
-In short the design accomplishes a private contact tracking that exposes data only on a need-to-know basis and with consent of the user. - * The authority does not have access to the data at any time and can't see any of the tracking information.
+In short the design accomplishes a private contact tracking that exposes data only on a need-to-know basis and with consent of the user.
+* The authority does not have access to the data at any time and can't see any of the tracking information.
 * Each user stores their contact histrory locally on their device. This data is encrypted using a public key from an assymetric encryption keypair, e.g. RSA.
 * The owner of the device does not have the private key and can not access to the personal information of the people with whom they have come into contact. 
 * The private key is held by the authority, who never has access to the encrypted data.
