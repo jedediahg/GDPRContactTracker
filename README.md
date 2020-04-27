@@ -8,5 +8,6 @@ In short the design accomplishes a private contact tracking that exposes data on
 * The Medical Team requests the private key from the authority, who release it because they have receieved the notification from the user.
 * The Medical Team can decrypt the contact history and notify the individuals in the list.
 
-It is important to note that the only people that get to see the personal details in the contact history are the medical team, and that they can only decrypt this after the holder of the data has given consent and the authority has given them the private key.
+The only people that get to see the personal details in the contact history are the medical team. They can only decrypt this after the holder of the data has given consent to the authority (sickness notification) and the authority has given the Medical Team the private key.
 
+The contact notification does not need to tell the recipient with whom they came into contact that was infected. Users of the application remain anonymous to each other.
