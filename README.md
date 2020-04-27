@@ -12,4 +12,4 @@ The only people that get to see the personal details in the contact history are 
 
 The contact notification does not need to tell the recipient with whom they came into contact that was infected. Users of the application remain anonymous to each other.
 
-![Sequence Diagram](images/Sequence.PNG)
+![Sequence Diagram](Sequence.PNG)
