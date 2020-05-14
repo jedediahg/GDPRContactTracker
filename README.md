@@ -21,4 +21,9 @@ In the sequence diagram below, Bob is already a registered user of the app.
 
 The file sequencediagram.org.txt can be used to edit the sequence diagram on https://sequencediagram.org/
 
+A note on contact tracing apps: 
+I am not an advocate of contact tracing apps. SUch apps are significant threats to human rights. They are also of questionable value in actual contact tracing. I, and many other people, refrain from taking mobile devices into potential high-contact zones, i.e. super markets, medical facilities, post offices, etc. This means that the most likely contacts will not be tracable.
+
+A smart phone is a device that you touch often and that touches your face often. Rather than involve this device in a higher risk situaion, I advise to leave your phone in the vehicle or home when making errands to high density locations. Always wash/disinfect your hands before touching the phone after such activity.
+
 ![Sequence Diagram](images/Sequence.PNG)
