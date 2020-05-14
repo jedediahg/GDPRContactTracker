@@ -6,7 +6,7 @@ In short the design accomplishes a private contact tracking that exposes data on
 * The owner of the device does not have the private key and can not access to the information of the people with whom they have come into contact. 
 * The private key is held by the Authority, who never has access to the encrypted data.
 * When a person becomes sick, they notify the Authority through the app. They then give their encrypted contact history to the Medical Team. 
-* The Medical Team requests the private key from the Authority, who release based on the sickness notification from the user. 
+* The Medical Team requests the private key from the Authority, who release based on the sickness notification from the user (or the death certificate of the user, as the case may be). 
 * The Medical Team can decrypt the contact history and notify the individuals in the list.
 
 The only people that get to see the personal details in the contact history are the medical team. They can only decrypt this after the holder of the data has given consent to the Authority (sickness notification) and the Authority has given the Medical Team the private key.
