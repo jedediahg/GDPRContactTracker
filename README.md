@@ -2,7 +2,7 @@
 This is a simple design for a Contact Tracing app that can be implemented very simply and that fully respects privacy.
 In short the design accomplishes a private contact tracking that exposes data only on a need-to-know basis and with consent of the user.
 * The Authority does not have access to the data at any time and can't see any of the tracking information.
-* Each user stores their contact histrory locally on their device. This data is encrypted using a public key from an assymetric encryption keypair, e.g. RSA.
+* Each user stores their contact histrory locally on their device. This data is encrypted using a public key from an assymetric encryption keypair, e.g. RSA. Contact information should only be the device push address for sending notification of a hot contact.
 * The owner of the device does not have the private key and can not access to the information of the people with whom they have come into contact. 
 * The private key is held by the Authority, who never has access to the encrypted data.
 * When a person becomes sick, they notify the Authority through the app. They then give their encrypted contact history to the Medical Team. 
