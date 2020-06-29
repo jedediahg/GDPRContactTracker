@@ -1,11 +1,11 @@
 # GDPR Contact Tracker
 This is a simple design for a Contact Tracing app that can be implemented very simply and that fully respects privacy.
 In short the design accomplishes a private contact tracking that exposes data only on a need-to-know basis and with consent of the user.
-* The Authority does not have access to the data at any time and can't see any of the tracking information.
-* Each user stores their contact histrory locally on their device. This data is encrypted using a public key from an assymetric encryption keypair, e.g. RSA. Contact information should only be the device push address for sending notification of a hot contact.
-* The owner of the device does not have the private key and can not access to the information of the people with whom they have come into contact. 
+* Privacy is respected. The Authority does not have access to the data at any time and can't see any of the tracking information.
+* Data is decentralized. Each user stores their contact histrory locally on their device. This data is encrypted using a public key from an assymetric encryption keypair, e.g. RSA. Contact information should only be the device push address for sending notification of a hot contact.
+* Contacts are anonymous. The owner of the device does not have the private key and can not access to the information of the people with whom they have come into contact. 
 * The private key is held by the Authority, who never has access to the encrypted data.
-* When a person becomes sick, they notify the Authority through the app. They then give their encrypted contact history to the Medical Team. 
+* Individuals give consent. When a person becomes sick, they notify the Authority through the app. They then give their encrypted contact history to the Medical Team. 
 * The Medical Team requests the private key from the Authority, who release based on the sickness notification from the user (or the death certificate of the user, as the case may be). 
 * The Medical Team can decrypt the contact history and notify the individuals in the list.
 
@@ -27,4 +27,4 @@ I am not an advocate of contact tracing apps. They are significant threats to hu
 
 A smart phone is a device that you touch often and that touches your face often. Rather than involve this device in a higher risk situaion, I advise to leave your phone in the vehicle or home when making errands to high density locations. Always wash/disinfect your hands before touching the phone after such activity.
 
-![Sequence Diagram](images/Sequence.PNG)
+![Sequence Diagram](images/sequence_grouped.PNG)
